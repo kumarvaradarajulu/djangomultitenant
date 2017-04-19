@@ -26,3 +26,7 @@ MIDDLEWARE = [
     'djangomultitenant.Middleware',  # this has to be the first one
 ]
 ```
+
+Tada !!! You are all equipped with multitenancy !!!
+
+Note: migrations and management commands are not handled by this app. so please dont forget to use --database 

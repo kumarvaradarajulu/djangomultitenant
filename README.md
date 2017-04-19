@@ -1,5 +1,7 @@
 ## Django Multitenant ##
 
+[![PyPi](https://img.shields.io/pypi/v/djangomultitenant.svg)](https://pypi.python.org/pypi/djangomultitenant/) [![License](https://img.shields.io/pypi/l/djangomultitenant.svg)](https://github.com/akhilputhiry/djangomultitenant/blob/master/LICENSE.txt) 
+
 This app can be used to implement multitenant architecture within your django project very easily.
 
 Inorder to install the app

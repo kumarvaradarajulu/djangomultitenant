@@ -14,6 +14,24 @@ Modify the project settings file as shown below
 
 
 ```
+DATABASES = {
+    'default': {
+
+    },
+    
+    # DB for tenant 1
+    'akhil': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'akhil.sqlite3'),
+    },
+    
+    # DB for tenant 2
+    'nikhil': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'nikhil.sqlite3'),
+    }
+}
+
 INSTALLED_APPS = [
     'djangomultitenant',
 ]

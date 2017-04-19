@@ -10,7 +10,7 @@ class Middleware(object):
         self.get_response = get_response
 
     def __call__(self, request):
-        tenant_code = request.META.get('HTTP_TENANT_CODE', 'unknown')
+        tenant_code = request.META.get('HTTP_TENANT_CODE', 'default')
         setattr(thread_local_data, 'tenant_code', str(tenant_code).lower())
         response = self.get_response(request)
         return response
@@ -20,7 +20,7 @@ class Router(object):
 
     @staticmethod
     def _select_db():
-        return getattr(thread_local_data, 'tenant_code', 'unknown')
+        return getattr(thread_local_data, 'tenant_code', 'default')
 
     def db_for_read(self, model, **hints):
         return self._select_db()

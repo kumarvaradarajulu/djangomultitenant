@@ -45,6 +45,12 @@ MIDDLEWARE = [
 ]
 ```
 
+Use the TENANT-CODE header in all your requests to the django project. You can use [requestly](https://chrome.google.com/webstore/detail/requestly/mdnleldcmiljblolnjhpnblkcekpdkpa?hl=en) to send the headers while accessing project. In the production environment, these headers can be configured in the webservers.
+
+```
+TENANT-CODE: akhil
+```
+
 Tada !!! You are all equipped with multitenancy !!!
 
 Note: migrations and management commands are not handled by this app. so please dont forget to use --database 

@@ -20,7 +20,6 @@ class Router(object):
 
     @staticmethod
     def _select_db():
-        import pdb; pdb.set_trace()
         return getattr(thread_local_data, 'tenant_code', 'unknown')
 
     def db_for_read(self, model, **hints):

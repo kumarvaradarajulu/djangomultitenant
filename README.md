@@ -1,6 +1,16 @@
 ## Django Multitenant ##
 
-This app can be used to multitenant architecture within your django project very easily. Inorder to use, you have add this app to the django installed apps and add the middleware and db router in the settings file
+This app can be used to implement multitenant architecture within your django project very easily.
+
+Inorder to install the app
+
+
+```
+pip install djangomultitenant
+```
+
+
+Modify the project settings file as shown below
 
 
 ```

@@ -1,4 +1,6 @@
 *.pyc
+dist
 .idea
 project
 .DS_Store
+*.egg-info

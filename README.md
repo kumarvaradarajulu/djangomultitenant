@@ -5,19 +5,14 @@ This app can be used to multitenant architecture within your django project very
 
 ```
 INSTALLED_APPS = [
-    ...................,
     'djangomultitenant',
-    ...................,
 ]
 
 DATABASE_ROUTERS = [
-    .......................................,
-    'djangomultitenant.routers.MultiTenant',
-    .......................................,
+    'djangomultitenant.Router',
 ]
 
 MIDDLEWARE = [
-    'djangomultitenant.middlewares.MultiTenant',  # this has to be the first one
-    ...........................................,
+    'djangomultitenant.Middleware',  # this has to be the first one
 ]
 ```
